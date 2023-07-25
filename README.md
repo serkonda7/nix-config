@@ -1,5 +1,6 @@
 # NixOS Config
 ```sh
 sudo -i
-curl https://github.com/serkonda7/nixos-config/min-vbox/min_vbox.sh | bash
+curl https://raw.githubusercontent.com/serkonda7/nixos-config/main/init.sh | bash
+./min_vbox.sh
 ```
