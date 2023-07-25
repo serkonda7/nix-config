@@ -8,4 +8,7 @@ mkfs.ext4 -L nixos /dev/sda1
 mount /dev/disk/by-label/nixos /mnt
 
 nixos-generate-config --root /mnt
-# cp configuration.nix /mnt/etc/nixos/
+cp configuration.nix /mnt/etc/nixos/
+
+nixos-install
+reboot
