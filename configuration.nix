@@ -15,8 +15,6 @@
     device = "/dev/sda";
   };
 
-  networking.hostName = "nix-test";
-
   users.mutableUsers = true;
   users.users.root.initialPassword = "changeme";
 
