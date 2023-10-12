@@ -1,13 +1,12 @@
-# NixOS Config
+# nix-conig
 ```sh
 sudo loadkeys de
-sudo -i
 
-curl -LO github.com/serkonda7/nixos-config/archive/main.zip
+curl -LO github.com/serkonda7/nix-config/archive/main.zip
 unzip main.zip
 
-cd nixos-config-main
-./install.sh
+cd nix-config-main
+sudo ./install.sh
 # On reboot press F12 and select the hard drive
 ```
 
