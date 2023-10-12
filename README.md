@@ -13,6 +13,12 @@ sudo ./install.sh
 ./first_run.sh
 ```
 
+## Commands
+```sh
+# Rebuild the system
+sudo nixos-rebuild switch --flake /etc/nixos#nixos-test
+```
+
 ## Resources
 - Flakes: https://github.com/ryan4yin/nixos-and-flakes-book
 - Git Integration: https://discourse.nixos.org/t/github-strategies-for-configuration-nix/1983/2
