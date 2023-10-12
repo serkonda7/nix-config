@@ -8,6 +8,9 @@ unzip main.zip
 cd nix-config-main
 sudo ./install.sh
 # On reboot press F12 and select the hard drive
+
+# After login:
+./first_run.sh
 ```
 
 ## Resources
