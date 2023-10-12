@@ -26,5 +26,7 @@
 
   virtualisation.virtualbox.guest.enable = true;
 
+  console.keyMap = "de";
+
   system.stateVersion = "23.05";
 }
