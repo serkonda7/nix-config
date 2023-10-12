@@ -12,10 +12,6 @@ cp configuration.nix /mnt/etc/nixos/
 
 nixos-install --no-root-passwd
 
-# TODO git clone the repo into root
-
-# TODO auto eject iso
-
 echo "Press enter to reboot..."
 read -s -n 1
 reboot

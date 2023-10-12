@@ -5,11 +5,26 @@
     ./hardware-configuration.nix
   ];
 
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/sda";
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
+
+  boot.loader.grub = {
+    enable = true;
+    device = "/dev/sda";
+  }
 
   users.mutableUsers = true;
   users.users.root.initialPassword = "changeme";
+
+  environment.systemPackages = with pkgs; [
+    curl
+    wget
+    git
+  ];
+
+  virtualisation.virtualbox.guest.enable = true;
 
   system.stateVersion = "23.05";
 }
