@@ -13,7 +13,7 @@
   boot.loader.grub = {
     enable = true;
     device = "/dev/sda";
-  }
+  };
 
   users.mutableUsers = true;
   users.users.root.initialPassword = "changeme";

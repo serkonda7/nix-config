@@ -12,6 +12,8 @@ cp configuration.nix /mnt/etc/nixos/
 
 nixos-install --no-root-passwd
 
+cp first_run.sh /mnt/root
+
 echo "Press enter to reboot..."
 read -s -n 1
 reboot
