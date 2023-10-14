@@ -16,7 +16,7 @@ sudo ./install.sh
 ## Commands
 ```sh
 # Rebuild the system
-sudo nixos-rebuild switch --flake /etc/nixos#nixos-test
+sudo nixos-rebuild switch --flake /etc/nixos#nixos
 ```
 
 ## Resources

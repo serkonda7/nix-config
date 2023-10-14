@@ -18,10 +18,17 @@
   users.mutableUsers = true;
   users.users.root.initialPassword = "changeme";
 
+  programs.git = {
+    enable = true;
+    user = {
+      name = "Lukas Neubert";
+      email = "serkonda7@pm.me";
+    };
+  };
+
   environment.systemPackages = with pkgs; [
     curl
     wget
-    git
   ];
 
   virtualisation.virtualbox.guest.enable = true;
